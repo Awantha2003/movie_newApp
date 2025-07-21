@@ -41,7 +41,12 @@ const {
           <Text className="text-red-500 text-center mt-10">{moviesError?.message ?? String(moviesError)}</Text>
         ) : (
           <View className="flex-1 mt-5">
-            <SearchBar onPress={() => router.push('/search')} placeholder="Search for  a movie " />
+            <SearchBar
+              value=""
+              onChangeText={() => {}}
+              onPress={() => router.push('/search')}
+              placeholder="Search for  a movie "
+            />
             <Text className="text-lg text-white font-bold mt-5 mb-3">Latest Movies</Text>
 
             <FlatList
