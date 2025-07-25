@@ -7,3 +7,12 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+
+[build]
+  base = "movie_newApp"
+  command = "npm run build"
+  publish = "movie_newApp/dist"
+
+[functions]
+  directory = "movie_newApp/netlify/functions"
